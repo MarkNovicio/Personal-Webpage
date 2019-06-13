@@ -1,42 +1,169 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Mark's Webpage</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
-  </head>
 
-  <body>
-    <header role="header">
-      <div class="image-container">
-        <img
-          class="header-image"
-          src="http://www.sussexvt.k12.de.us/science/The%20History%20of%20the%20World%201500-1899/Mercator%20Projection%20World%20Map_files/image002.jpg"
-        />
-        <div class="overlay"></div>
-        <div class="header-title"><h1>Mark Novicio's Webpage</h1></div>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Mark's Webpage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+  <header role="header">
+    <div class="image-container">
+      <img class="header-image"
+        src="http://www.sussexvt.k12.de.us/science/The%20History%20of%20the%20World%201500-1899/Mercator%20Projection%20World%20Map_files/image002.jpg" />
+      <div class="overlay"></div>
+      <div class="header-title">
+        <h1>Mark Novicio's Webpage</h1>
       </div>
-    </header>
-    <div class="navagation-bar">
-      <nav role="navigation">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Resume</a></li>
-          <li><a href="#">Vision</a></li>
-          <li><a href="#">Videos</a></li>
-          <li><a href="#">Images</a></li>
-          <li><a href="#">Places Visited</a></li>
-        </ul>
-      </nav>
-      <section class="home">
-        <div class="home-statements"></div>
-        <div class="home-images"></div>
-      </section>
-
-      <section class="images"><div class="africa-images"></div></section>
     </div>
-  </body>
+  </header>
+  <nav id="nav-bar">
+
+    <ul>
+      <li><a href="#home-text">Home</a></li>
+      <a href="#vision">Vision</a></li>
+      <li><a href="#videos">Videos</a></li>
+      <li><a href="#">Images</a></li>
+      <li><a href="#places">Places Visited</a></li>
+      <li><a href="Resume.html" target="_blank"> Resume</a></li>
+    </ul>
+  </nav>
+  <section class="home">
+    <div class="home-statements"></div>
+    <div class="home-images"></div>
+    <div class="some-file"></div>
+  </section>
+
+  <main role="main">
+    <section class="js-africa-images">
+      <div class="js-images-container">
+        <p class="image-description"></p>
+        <div class="js-africa-prev-next">
+          <svg class="prev-page prev-next-page" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32"
+            height="32" fill="currentcolor">
+            <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z"></path>
+          </svg>
+        </div>
+        <div class="js-africa-next-next">
+          <svg class="next-page prev-next-page" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32"
+            height="32" fill="currentcolor">
+            <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
+          </svg>
+        </div>
+      </div>
+    </section>
+    <section id="home-text">
+      <p>
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat. Duis aute irure dolor in
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+        culpa qui officia deserunt mollit anim id est laborum
+      </p>
+      <p>
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat. Duis aute irure dolor in
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+        culpa qui officia deserunt mollit anim id est laborum
+      </p>
+      <p>
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat. Duis aute irure dolor in
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+        culpa qui officia deserunt mollit anim id est laborum
+      </p>
+    </section>
+    <section id="vision">
+      <h2>Vision</h2>
+      <p>
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat. Duis aute irure dolor in
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+        culpa qui officia deserunt mollit anim id est laborum
+      </p>
+      <p>
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat. Duis aute irure dolor in
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+        culpa qui officia deserunt mollit anim id est laborum
+      </p>
+      <p>
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat. Duis aute irure dolor in
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+        culpa qui officia deserunt mollit anim id est laborum
+      </p>
+    </section>
+
+    <section id="videos">
+      <h2>Videos</h2>
+      <p>
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat. Duis aute irure dolor in
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+        culpa qui officia deserunt mollit anim id est laborum
+      </p>
+      <div class="iframe-container">
+        <iframe src="https://youtube.com/embed/7mbtUz9gRSQ" frameborder="0" allowfullscreen controls>
+          <p>
+            Your browser doesn't support HTML5 video. Here is a
+            <a href="https://youtu.be/7mbtUz9gRSQ">link to the video</a>
+            instead.
+          </p>
+        </iframe>
+      </div>
+
+      <p>
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat. Duis aute irure dolor in
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+        culpa qui officia deserunt mollit anim id est laborum
+      </p>
+      <p>
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat. Duis aute irure dolor in
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+        culpa qui officia deserunt mollit anim id est laborum
+      </p>
+    </section>
+    <section id="places">
+      <h2>PLACES VISITED</h2>
+      <div id="map"></div>
+    </section>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzCsc0Va71qm9pCSvssDkHs0BuZBRhI_c&callback=initMap"></script>
+    <script src="main.js"></script>
+  </main>
+</body>
+
 </html>

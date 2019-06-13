@@ -1,11 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400, 900);
 
+body {
+  margin: 0;
+}
+
 .image-container {
   background-color: rgb(99, 99, 99);
   justify-content: center;
   align-items: center;
   display: flex;
 }
+
 .header-image {
   max-height: 150px;
   width: 100%;
@@ -28,34 +33,39 @@
   position: absolute;
 }
 
-.navagation-bar {
+#nav-bar ul{
+  height: 3rem;
   width: 100%;
   background: rgb(214, 211, 211);
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  
 }
-
+/*
 nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
+  text-align: center;
+  left: 30px;
 }
-
+*/
 nav li {
-  display: inline-block;
-  margin: 20px 50px;
-  padding-top: 20px;
-
-  position: relative;
+list-style: none;
 }
 
 nav a {
   color: rgb(119, 119, 119);
   text-decoration: none;
+  
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 900;
 }
 
-nav a:hover {
+#nav-bar a:hover {
   color: black;
 }
 
@@ -65,12 +75,77 @@ nav a::before {
   height: 5px;
   width: 100%;
   background-color: #444;
-
-  position: absolute;
-  top: 0;
+  position: relative;
+  bottom: -4px;
   width: 0%;
 }
 
 nav a:hover::before {
   width: 100%;
+}
+
+.js-images-container p {
+  padding: 10px;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.js-images-container {
+  height: 350px;
+  width: 50%;
+  border: 2px solid black;
+  margin: 10px auto;
+  display: block;
+  position: relative;
+  background-size: cover;
+}
+
+.prev-next-page {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.prev-page {
+  left: 0;
+}
+
+.next-page {
+  right: 0;
+}
+
+.prev-next-page:hover {
+  background-color: rgb(226, 225, 225);
+  fill: blue;
+}
+
+.iframe-container {
+  margin: 0 auto;
+  width: 80%;
+  height: 350px;
+  position: relative;
+}
+
+.iframe-container iframe {
+  margin-left: 20%;
+  /*I want video centered */
+  width: 60%;
+  height: 100%;
+}
+
+#places h2 {
+  font-weight: bold;
+}
+
+#map {
+  width: 90%;
+  height: 500px;
+  border: 1px solid #000000;
+  margin: auto;
 }
