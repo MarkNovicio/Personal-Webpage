@@ -125,6 +125,10 @@ nav a:hover::before {
   fill: blue;
 }
 
+#home-text, #vision, #videos, #places
+{
+  margin: 4%;
+}
 .iframe-container {
   margin: 0 auto;
   width: 80%;
