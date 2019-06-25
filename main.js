@@ -17,12 +17,12 @@ let imagesAfrica = [
     imageSelection: "Swaziland_landscape2.JPG"
   }
 ];
-$(function() {
+$(function () {
   let currentImage = 0;
   setImage(currentImage);
 
   //next button clicked
-  $(".next-page").on("click", function(event) {
+  $(".next-page").on("click", function (event) {
     event.preventDefault();
     console.log("works");
 
@@ -36,7 +36,7 @@ $(function() {
     console.log("works");
   });
 
-  $(".prev-page").click(function(event) {
+  $(".prev-page").click(function (event) {
     event.preventDefault();
     console.log("works");
     //event.preventDefault();
@@ -54,7 +54,7 @@ function setImage(idx) {
   let imageContainer = $(".js-images-container");
 
   imageContainer.css("background-image", `url(${image.imageSelection})`);
-  imageContainer.css("color", "white");
+  imageContainer.css("color", "#fff");
   imageContainer.css("font-size", "20px");
   $(".image-description").text(`${image.imageDescription}`);
 }
@@ -117,7 +117,7 @@ function initMap() {
         content: location.content
       });
       // adding an event listener
-      marker.addListener("click", function() {
+      marker.addListener("click", function () {
         popup.open(map, marker); //two parameters position specified for zoomed area and
         //the marker of Ireland
       });
@@ -132,9 +132,9 @@ function initMap() {
   const washingtonDC = { lat: 38.88974, lng: -77.0143747 }; //location of Washington DC
   const hawaii = ; //location of hawaii
   const philippines = {  };
-  const southAfrica = 
+  const southAfrica =
 
-  
+
   const northernIrelandMarker = new google.maps.Marker({
     position: northernIreland,
     map: map
