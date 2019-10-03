@@ -4,25 +4,25 @@
 let imagesAfrica = [
   {
     imageDescription: "Swaziland Landscape1",
-    imageSelection: "Swaziland.JPG"
+    imageSelection: "assets/images/Swaziland.JPG"
   },
 
   {
     imageDescription: "Swaziland Landscape2",
-    imageSelection: "Swaziland_landscape.JPG"
+    imageSelection: "assets/images/Swaziland_landscape.JPG"
   },
 
   {
     imageDescription: "Swaziland Landscape3",
-    imageSelection: "Swaziland_landscape2.JPG"
+    imageSelection: "assets/images/Swaziland_landscape2.JPG"
   }
 ];
-$(function () {
+$(function() {
   let currentImage = 0;
   setImage(currentImage);
 
   //next button clicked
-  $(".next-page").on("click", function (event) {
+  $(".next-page").on("click", function(event) {
     event.preventDefault();
     console.log("works");
 
@@ -36,7 +36,7 @@ $(function () {
     console.log("works");
   });
 
-  $(".prev-page").click(function (event) {
+  $(".prev-page").click(function(event) {
     event.preventDefault();
     console.log("works");
     //event.preventDefault();
@@ -117,7 +117,7 @@ function initMap() {
         content: location.content
       });
       // adding an event listener
-      marker.addListener("click", function () {
+      marker.addListener("click", function() {
         popup.open(map, marker); //two parameters position specified for zoomed area and
         //the marker of Ireland
       });
