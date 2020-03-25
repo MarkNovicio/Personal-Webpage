@@ -33,19 +33,15 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-around;
-
 }
 
 ion-icon {
-
   color: blue; /*other places uses the CSS property fill why does color work??*/
   border: 1px solid white;
   border-radius: 50%;
   height: 14px;
   width: 17px;
 }
-
-
 
 .container {
   max-width: 960px;

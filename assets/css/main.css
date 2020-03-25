@@ -1,0 +1,226 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400, 900);
+
+body {
+  background: url("../images/eberhard-grossgasteiger_update.jpg") no-repeat
+    center center fixed;
+  background-size: cover;
+  height: 10%;
+  padding: 0;
+  margin: 0;
+}
+#background {
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+.header-title {
+  font-size: 20px;
+  text-align: center;
+  font-family: "Pacifico", cursive;
+  color: white;
+}
+.header-container {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: right;
+}
+
+.hero-logo {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+}
+
+#main-container {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+}
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav li {
+  color: rgb(119, 119, 119);
+  text-decoration: none;
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+nav li::before {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: #444;
+  position: relative;
+  bottom: -4px;
+  width: 0%;
+}
+
+nav li:hover::before {
+  width: 100%;
+}
+
+#about-me {
+  margin: 0;
+  padding: 0;
+  top: 50%;
+  text-align: center;
+}
+
+#about-me p {
+  color: #fff;
+  font-size: 2em;
+  /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+.bootstrap:hover,
+.responsive:hover,
+.web-site:hover,
+.quiz-app:hover {
+  color: blue;
+  border-color: blue;
+}
+/*
+.pop-up-portfolio {
+  display: none;
+  position: fixed;
+}
+*/
+.js-images-container p {
+  padding: 10px;
+  position: absolute;
+  background-color: rgba(158, 158, 158, 0.8);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.js-images-container {
+  height: 450px;
+  width: 100%;
+  margin: 10px auto;
+  display: block;
+  position: relative;
+  background-size: cover;
+}
+
+.prev-next-page {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.prev-page {
+  left: 0;
+}
+
+.next-page {
+  right: 0;
+}
+
+.prev-next-page:hover {
+  background-color: rgb(226, 225, 225);
+  fill: blue;
+}
+/*
+.iframe-container {
+  margin: 0 auto;
+  width: 80%;
+  height: 350px;
+  position: relative;
+}
+
+.iframe-container iframe {
+  margin-left: 20%;
+ want video centered 
+  width: 60%;
+  height: 100%;
+}
+*/
+.home-portfolio {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 0 200px 0;
+}
+.portfolio-items {
+  border: 4px solid #fff;
+  border-radius: 50%;
+  height: 12rem;
+  width: 12rem;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+
+  font-size: 1.2em;
+}
+
+.portfolio-items a {
+  text-decoration: none;
+  color: #fff;
+}
+#places h2 {
+  font-weight: bold;
+}
+
+#map {
+  /*width: 90%;*/
+  height: 500px;
+  border: 1px solid #fff;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #fff;
+  height: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#footer-text {
+  margin: 0;
+}
+.footer-bar {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-bar {
+  text-decoration: none;
+  margin: 0;
+  width: 30%;
+}
+
+.footer-bar li {
+  list-style: none;
+  color: #000;
+}
+.footer-bar a {
+  text-decoration: none;
+}
+h2 {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}

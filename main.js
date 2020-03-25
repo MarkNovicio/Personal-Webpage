@@ -3,26 +3,26 @@
 
 let imagesAfrica = [
   {
-    imageDescription: "Swaziland Landscape1",
+    imageDescription: "Swaziland_Copy",
     imageSelection: "Swaziland.JPG"
   },
 
   {
-    imageDescription: "Swaziland Landscape2",
+    imageDescription: "Swaziland_landscape_Copy",
     imageSelection: "Swaziland_landscape.JPG"
   },
 
   {
-    imageDescription: "Swaziland Landscape3",
+    imageDescription: "Swaziland_landscape2 _Copy",
     imageSelection: "Swaziland_landscape2.JPG"
   }
 ];
-$(function () {
+$(function() {
   let currentImage = 0;
   setImage(currentImage);
 
   //next button clicked
-  $(".next-page").on("click", function (event) {
+  $(".next-page").on("click", function(event) {
     event.preventDefault();
     console.log("works");
 
@@ -36,7 +36,7 @@ $(function () {
     console.log("works");
   });
 
-  $(".prev-page").click(function (event) {
+  $(".prev-page").click(function(event) {
     event.preventDefault();
     console.log("works");
     //event.preventDefault();
@@ -58,6 +58,58 @@ function setImage(idx) {
   imageContainer.css("font-size", "20px");
   $(".image-description").text(`${image.imageDescription}`);
 }
+
+let elements = {
+  home: document.getElementsByClassName("home-portfolio")[0],
+  about: document.getElementsByClassName("about-me")[0],
+  images: document.getElementsByClassName("images")[0],
+  visted: document.getElementsByClassName("places")
+};
+
+let nav = {
+  home: document.getElementsByClassName("home")[0],
+  about: document.getElementsByClassName("about-me")[0],
+  images: document.getElementsByClassName("images")[0],
+  visted: document.getElementsByClassName("places-visited")[0]
+};
+
+function hide() {}
+
+function show() {}
+let portfolio = document.getElementsByClassName("home-portfolio");
+
+portfolio.addEventListener('click', function(e){
+  let quizApp= document.querySelector(".quiz-app");
+  let webSite= document.querySelector(".web-site");
+  let responsiveSite= document.querySelector(".responsive");
+  
+  //variable to store selected element
+  //e = e || window.event;
+  //let target = e.target || e.srcElement;
+  let target = e.target.tagName;
+  console.log(target);
+  //selectPortfolio(target);
+})
+
+function selectedElement(e){
+  const clickedElement= e.target.element
+  alert(clickedElement)
+}
+function selectPortfolio(element){
+  const strWindowFeatures = "location=yes,height=570,width=520,scrollbars=yes,status=yes";
+  if(element == ".quiz-app"){
+    window.open("javascriptquizapp.netlify.com", "_blank", strWindowFeatures);
+  }
+  else if(element ==".web-site"){
+    window.open("https://jacobwebsite.netlify.com", "_blank", strWindowFeatures);
+  }
+
+  else{
+
+  }
+
+/*
+
 const locations = [
   {
     name: "Washington DC",
@@ -117,13 +169,14 @@ function initMap() {
         content: location.content
       });
       // adding an event listener
-      marker.addListener("click", function () {
+      marker.addListener("click", function() {
         popup.open(map, marker); //two parameters position specified for zoomed area and
         //the marker of Ireland
       });
     }
   }
 }
+*/
 /*
 function initMap() {
   const northernIreland = { lat: 54.7877, lng: -6.4923 }; //location of northernIreland
