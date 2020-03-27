@@ -85,7 +85,7 @@ webSite.addEventListener("click", function() {
 
 const quizApp = document.querySelector(".quiz-app");
 quizApp.addEventListener("click", function() {
-  window.open("https:javascriptquizapp.netlify.com", "_blank");
+  window.open("https://javascriptquizapp.netlify.com", "_blank");
 });
 
 const bootStrap = document.querySelector(".bootstrap");
