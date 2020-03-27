@@ -78,6 +78,8 @@ responsiveSite.addEventListener("click", function() {
 });
 
 const webSite = document.querySelector(".web-site");
+const websitePortfolio = document.querySelector(".pop-up-portfolio");
+
 webSite.addEventListener("click", function() {
   console.log("works");
   window.open("https://jacobwebsite.netlify.com", "_blank");
