@@ -1,4 +1,5 @@
 "use strict";
+
 // locations
 
 let imagesAfrica = [
@@ -78,11 +79,17 @@ responsiveSite.addEventListener("click", function() {
 });
 
 const webSite = document.querySelector(".web-site");
+const modal = document.querySelector(".modal");
 const websitePortfolio = document.querySelector(".pop-up-portfolio");
 
 webSite.addEventListener("click", function() {
-  console.log("works");
-  window.open("https://jacobwebsite.netlify.com", "_blank");
+  modal.style.display = "block";
+  //  window.open("https://jacobwebsite.netlify.com", "_blank");
+});
+
+const closeModal = document.querySelector(".modal_close-bar");
+closeModal.addEventListener("click", function() {
+  modal.style.display = "none";
 });
 
 const quizApp = document.querySelector(".quiz-app");
@@ -104,6 +111,9 @@ function appendChildren(parent, children) {
     parent.appendChild(child);
   });
 }
+window.onload = function() {
+  document.querySelector(".modal").style.display = "none";
+};
 /*
 let myList = document.getElementsByClassName("pop-up-portfolio");
 

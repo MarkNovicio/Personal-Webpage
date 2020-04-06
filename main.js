@@ -3,20 +3,6 @@
 
 let imagesAfrica = [
   {
-<<<<<<< HEAD
-    imageDescription: "Swaziland Landscape1",
-    imageSelection: "assets/images/Swaziland.JPG"
-  },
-
-  {
-    imageDescription: "Swaziland Landscape2",
-    imageSelection: "assets/images/Swaziland_landscape.JPG"
-  },
-
-  {
-    imageDescription: "Swaziland Landscape3",
-    imageSelection: "assets/images/Swaziland_landscape2.JPG"
-=======
     imageDescription: "Swaziland_Copy",
     imageSelection: "Swaziland.JPG"
   },
@@ -29,7 +15,6 @@ let imagesAfrica = [
   {
     imageDescription: "Swaziland_landscape2 _Copy",
     imageSelection: "Swaziland_landscape2.JPG"
->>>>>>> mark-branch
   }
 ];
 $(function() {

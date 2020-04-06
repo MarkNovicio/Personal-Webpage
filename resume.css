@@ -35,12 +35,23 @@ a:hover {
   justify-content: space-around;
 }
 
+.link-list {
+  list-style: none;
+  padding-top: 20px;
+}
+.projects {
+  display: inline;
+  clear: none;
+  color: #236fb2;
+  font-weight: bold;
+}
 ion-icon {
   color: blue; /*other places uses the CSS property fill why does color work??*/
   border: 1px solid white;
   border-radius: 50%;
   height: 14px;
   width: 17px;
+  padding-right: 10px;
 }
 
 .container {
