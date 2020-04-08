@@ -5,17 +5,17 @@
 let imagesAfrica = [
   {
     imageDescription: "Swaziland landscape 1",
-    imageSelection: "Swaziland.JPG"
+    imageSelection: "Swaziland_Copy.JPG"
   },
 
   {
     imageDescription: "Swaziland landscape 2",
-    imageSelection: "Swaziland_landscape.JPG"
+    imageSelection: "Swaziland_landscape_Copy.JPG"
   },
 
   {
     imageDescription: "Swaziland landscape 3",
-    imageSelection: "Swaziland_landscape2.JPG"
+    imageSelection: "Swaziland_landscape2_Copy.JPG"
   },
 
   {
