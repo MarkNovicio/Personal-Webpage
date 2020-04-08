@@ -111,10 +111,11 @@ function appendChildren(parent, children) {
     parent.appendChild(child);
   });
 }
+/*
 window.onload = function() {
   document.querySelector(".modal").style.display = "none";
 };
-/*
+
 let myList = document.getElementsByClassName("pop-up-portfolio");
 
 let portfolio = document.getElementsByClassName("home-portfolio");

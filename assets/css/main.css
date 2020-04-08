@@ -99,6 +99,7 @@ nav li:hover::before {
   width: 100%;
   height: 300px;
   position: absolute;
+  display: none;
 }
 
 .modal_close-bar {
@@ -106,6 +107,9 @@ nav li:hover::before {
   justify-content: flex-end;
   cursor: pointer;
   margin-right: 1rem;
+}
+ion-icon {
+  color: #000;
 }
 .portfolio-list {
   display: flex;
