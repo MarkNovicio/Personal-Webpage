@@ -69,11 +69,16 @@ $(function() {
 //function that establishes an image over to the designated picture
 const setImage = idx => {
   let image = imagesAfrica[idx];
-  let imageContainer = $(".js-images-container");
+  //let imageContainer = $(".js-images-container");
+  let imageContainer = document.querySelector(".js-images-container");
 
-  imageContainer.css("background-image", `url(${image.imageSelection})`);
-  imageContainer.css("color", "#fff");
-  imageContainer.css("font-size", "20px");
+  imageContainer.style.backgroundImage = "url(" + image.imageSelection + ")";
+  //imageContainer.css("background-image", `url(${image.imageSelection})`);
+  //imageContainer.css("color", "#fff");
+  // imageContainer.css("font-size", "20px");
+  imageContainer.style.color = "#fff";
+  imageContainer.style.fontSize = "20px";
+
   $(".image-description").text(`${image.imageDescription}`);
 };
 
@@ -116,47 +121,9 @@ function appendChildren(parent, children) {
     parent.appendChild(child);
   });
 }
-/*
-window.onload = function() {
-  document.querySelector(".modal").style.display = "none";
-};
 
-let myList = document.getElementsByClassName("pop-up-portfolio");
+//GOOGLE Map
 
-let portfolio = document.getElementsByClassName("home-portfolio");
-
-portfolio.addEventListener("click", function(e) {
-  let quizApp = document.querySelector(".quiz-app");
-  let webSite = document.querySelector(".web-site");
-  let responsiveSite = document.querySelector(".responsive");
-
-  //variable to store selected element
-  e = e || window.event;
-  let target = e.target || e.srcElement;
-  //let target = e.target.tagName;
-  console.log(target);
-  //selectPortfolio(target);
-});
-
-function selectedElement(e) {
-  const clickedElement = e.target.element;
-  alert(clickedElement);
-}
-function selectPortfolio(element) {
-  const strWindowFeatures =
-    "location=yes,height=570,width=520,scrollbars=yes,status=yes";
-  if (element == ".quiz-app") {
-    window.open("javascriptquizapp.netlify.com", "_blank", strWindowFeatures);
-  } else if (element == ".web-site") {
-    window.open(
-      "https://jacobwebsite.netlify.com",
-      "_blank",
-      strWindowFeatures
-    );
-  } else {
-  }
-}
-*/
 const locations = [
   {
     name: "Washington DC",
@@ -223,67 +190,3 @@ function initMap() {
     }
   }
 }
-/*
-function initMap() {
-  const northernIreland = { lat: 54.7877, lng: -6.4923 }; //location of northernIreland
-  const ireland = ; //location of Ireland
-  const swaziland = ; //location of Swaziland
-  const washingtonDC = { lat: 38.88974, lng: -77.0143747 }; //location of Washington DC
-  const hawaii = ; //location of hawaii
-  const philippines = {  };
-  const southAfrica =
-
-
-  const northernIrelandMarker = new google.maps.Marker({
-    position: northernIreland,
-    map: map
-  });
-  const irelandMarker = new google.maps.Marker({ position: ireland, map: map });
-  const swazilandMarker = new google.maps.Marker({
-    position: swaziland,
-    map: map
-  });
-  const nwashingtonDCdMarker = new google.maps.Marker({
-    position: washingtonDC,
-    map: map
-  });
-  const hawaiidMarker = new google.maps.Marker({
-    position: hawaii,
-    map: map
-  });
-  const philippinesdMarker = new google.maps.Marker({
-    position: philippines,
-    map: map
-  });
-  const southAfricadMarker = new google.maps.Marker({
-    position: southAfrica,
-    map: map
-  });
-
-  // add a popup window
-  const irelandPopup = new google.maps.InfoWindow({
-    content: "Dublin, Ireland '\n' 06/12/19 "
-  });
-
-  // adding an event listener
-  irelandMarker.addListener("click", function() {
-    irelandPopup.open(map, irelandMarker); //two parameters position specified for zoomed area and
-    //the marker of Ireland
-  });
-
-  const northernIrelandPopup = new google.maps.InfoWindow({
-    content: "Giants Causeway 07/20/2019"
-  });
-
-  northernIrelandMarker.addListener("click", function() {
-    northernIrelandPopup.open(map, northernIrelandMarker);
-  });
-
-  const swazilandPopup = new google.maps.InfoWindow({
-    content: "Luke Commission 10/08/2017"
-  });
-  swazilandMarker.addListener("click", function() {
-    swazilandPopup.open(map, swazilandMarker);
-  });
-}
-*/
