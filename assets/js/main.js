@@ -14,11 +14,6 @@ let imagesAfrica = [
   },
 
   {
-    imageDescription: "Swaziland landscape 3",
-    imageSelection: "Swaziland_landscape2_Copy.JPG"
-  },
-
-  {
     imageDescription: "Swaziland Kid's Health Center",
     imageSelection: "Swaziland_Kids_Health_Center.jpg"
   },
