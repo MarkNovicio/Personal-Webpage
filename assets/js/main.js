@@ -37,7 +37,7 @@ $(function () {
   nextPage.addEventListener("click", (event) => {
     event.preventDefault();
 
-    imageContainer.style.transition = "all 1s";
+    imageContainer.style.transition = "all 1.5s ease-in-out";
     console.log("works!!!");
     currentImage++;
     console.log(currentImage);
@@ -56,7 +56,7 @@ $(function () {
     event.preventDefault();
     console.log("works");
     //event.preventDefault();
-    imageContainer.style.transition = "all 1s";
+    imageContainer.style.transition = "all 1.5s ease-in-out";
     currentImage--;
     imageContainer.style.transform = "translateX(" + currentImage + "px)";
     if (currentImage < 0) {
