@@ -128,6 +128,11 @@ function selectedProjectPortfolio() {
         window.open("https://javascriptquizapp.netlify.com", "_blank");
       } else if (e.target.classList.contains("bootstrap")) {
         window.open("https://harmonyhotel.nfshost.com/", "_blank");
+      } else if (e.target.classList.contains("api")) {
+        window.open(
+          "https://internationalexchangeconverter.netlify.app/",
+          "_blank"
+        );
       }
     },
     false
