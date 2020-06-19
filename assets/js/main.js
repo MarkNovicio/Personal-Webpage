@@ -118,17 +118,17 @@ closeModal.addEventListener("click", function () {
 function selectedProjectPortfolio() {
   window.addEventListener(
     "click",
-    function (e) {
-      if (e.target.classList.contains("responsive")) {
+    function (event) {
+      if (event.target.classList.contains("responsive")) {
         window.open("https://fewd-fylo-landing-page.netlify.com", "_blank");
         this.console.log("selectedElement works!!");
-      } else if (e.target.classList.contains("web-site")) {
+      } else if (event.target.classList.contains("web-site")) {
         modal.style.display = "block";
-      } else if (e.target.classList.contains("quiz-app")) {
+      } else if (event.target.classList.contains("quiz-app")) {
         window.open("https://javascriptquizapp.netlify.com", "_blank");
-      } else if (e.target.classList.contains("bootstrap")) {
+      } else if (event.target.classList.contains("bootstrap")) {
         window.open("https://harmonyhotel.nfshost.com/", "_blank");
-      } else if (e.target.classList.contains("api")) {
+      } else if (event.target.classList.contains("api")) {
         window.open(
           "https://internationalexchangeconverter.netlify.app/",
           "_blank"

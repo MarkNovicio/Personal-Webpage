@@ -90,7 +90,8 @@ nav li:hover::before {
 .bootstrap:hover,
 .responsive:hover,
 .web-site:hover,
-.quiz-app:hover {
+.quiz-app:hover,
+.api:hover {
   color: blue;
   border-color: blue;
 }
@@ -128,7 +129,6 @@ ion-icon {
 .portfolio-list .list:hover {
   color: blue;
   border-color: blue;
-  cursor: pointer;
 }
 
 .list a {
@@ -209,6 +209,7 @@ ion-icon {
 .portfolio-items a {
   text-decoration: none;
   color: #fff;
+  cursor: pointer;
 }
 #places h2 {
   font-weight: bold;
